@@ -1,0 +1,108 @@
+:root{
+    --black: #000000;
+    --white: #ffffff;
+    --color: #22c65b;
+    --background-color: #181818;
+    --container: 90%; 
+    --landing-avatar: url('../images/LandingPage.jpg');
+    --about-avatar: url('../images/14446071_1175636312501729_2826977849243634336_n.jpg');
+    --repeat: no-repeat;
+}
+
+body .app .landing-page-component{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+body .app .landing-page-component .landing-avatar{
+    background-image: var(--landing-avatar);
+    background-repeat: var(--repeat);
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+body .menu-drawer{
+    width: 40%;
+    background: var(--background-color);
+    padding: 20px;
+    right: -580px;
+    position: absolute;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 999;
+    box-shadow: -7px 3px 12px var(--black);
+    -webkit-transition: right ease-in 0.5s;  
+    -moz-transition: right ease-in 0.5s;    
+    -o-transition: right ease-in 0.5s;    
+    transition: right ease-in 0.5s;
+}
+body .menu-drawer .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+body .menu-drawer .header p{
+    font-size: 30px;
+    position: relative;
+    right: 70px;
+    color: #fff!important;
+}
+body .app .landing-page-component .landing-avatar:before{
+    content: '';
+    position: relative;
+    top: 0;
+    background-color: var(--black);
+}
+body .app .landing-page-component .landing-avatar .landing-content{
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+body .app .landing-page-component .landing-avatar .landing-content .heading h1{
+    position: absolute;    
+}
+body .app .about-component{
+    width: 86%;
+}
+header{
+    padding: 30px 0;
+}
+header .company-title{
+    position: relative;
+    top: 27%;
+}
+header .menu-toggle{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+header .menu-toggle .am-menu-toggle{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    position: relative;
+    bottom: 10px;
+}
+header .menu-toggle .am-menu-toggle .am-menu-title{
+    width: 100%;
+    height: 1px;
+    background: var(--white);
+    position: relative;
+    margin: 10px auto;
+    transition: width linear 0.5s;
+}
+header .menu-toggle a .am-menu-toggle .am-menu-title p{
+    color: var(--white)!important;
+}

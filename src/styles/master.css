@@ -1,0 +1,43 @@
+:root{
+    --color: #22c65b;
+    --background-color: #181818;
+    --container: 90%; 
+}
+
+.app{
+    min-height: 100vh;
+    background-color: var(--background-color);
+    padding: 0;
+}
+.main-content{
+    margin-bottom: 20px;
+}
+.app-content, .page-id{
+    display: inline-block;
+}
+.page-id h1{
+    font-size: 15px;
+    transform: rotate(-90deg);
+}
+.am-container{
+    width: var(--container);
+    margin: 0 auto
+}
+.main-color{
+    color: var(--color);
+}
+.am-bold{
+    font-weight: bold;
+}
+.am-bolder{
+    font-weight: bolder;
+}
+.am-capitalize{
+    text-transform: capitalize;
+}
+.am-center{
+    text-align: center;
+}
+.open{
+    right: 0!important;
+}
