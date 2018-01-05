@@ -9,11 +9,22 @@
     background-color: var(--background-color);
     padding: 0;
 }
+.white{
+    color: #ffffff;
+}
 .main-content{
     margin-bottom: 20px;
 }
+.link_btn{
+    padding: 20px;
+    border: 1px solid #4a4a4a;
+    border-radius: 30px;
+}
 .app-content, .page-id{
     display: inline-block;
+}
+.app-content{
+    margin: 30px auto;
 }
 .page-id h1{
     font-size: 15px;
