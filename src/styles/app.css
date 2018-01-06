@@ -1,148 +1,80 @@
+/*Style Variables*/
 :root{
-    --black: #000000;
-    --white: #ffffff;
-    --color: #22c65b;
-    --background-color: #181818;
-    --text-color: #4a4a4a;
-    --purple: #8e44ad;
-    --container: 90%; 
-    --landing-avatar: url('../images/LandingPage.jpg');
-    --about-avatar: url('../images/14446071_1175636312501729_2826977849243634336_n.jpg');
-    --repeat: no-repeat;
+	--background-color: #181818;
+	--black: #000;
+	--white: #fff;
+	--text-color: #4a4a4a;
+	--color: #22c65b;
 }
 
-body .app .landing-page-component{
-    width: 100%;
-    height: 100vh;
-    position: absolute;
+/*Menu Drawer*/
+body div#root .main-content .menu-drawer{
+	width: 40%;
+	min-height: 100%;
+	background-color: var(--background-color);
+	box-shadow: -5px -5px 12px var(--black);
+	padding: 50px;
+	position: absolute;
+	right: -580px;
+	z-index: 999;
+	transition: right 0.5s ease-in;
 }
-body .app .landing-page-component .landing-avatar{
-    background-image: var(--landing-avatar);
-    background-repeat: var(--repeat);
-    background-attachment: fixed;
-    background-position: top center;
-    background-size: cover;
-    top: 0;
-    left: 0;
-    z-index: 1;
+body div#root .main-content .menu-drawer .header{
+	width: 100%;
+	padding: 10px;
 }
-body .menu-drawer{
-    width: 40%;
-    background: var(--background-color);
-    padding: 20px;
-    right: -580px;
-    position: absolute;
-    height: 100vh;
-    overflow: hidden;
-    z-index: 999;
-    box-shadow: -7px 3px 12px var(--black);
-    -webkit-transition: right ease-in 0.5s;  
-    -moz-transition: right ease-in 0.5s;    
-    -o-transition: right ease-in 0.5s;    
-    transition: right ease-in 0.5s;
+body div#root .main-content .menu-drawer .header .cancel{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-end;
+	
 }
-body .menu-drawer .header{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    align-content: flex-end;
+body div#root .main-content .menu-drawer .header .cancel p{
+	color: var(--white);
+	font-size: 30px;
 }
-body .menu-drawer .header p{
-    font-size: 30px;
-    position: relative;
-    right: 70px;
-    color: #fff!important;
+body div#root .main-content .menu-drawer nav ul li{
+	position: relative;
+	padding: 30px 0;
 }
-body .app .landing-page-component .landing-avatar:before{
-    content: '';
-    position: relative;
-    top: 0;
-    background-color: var(--black);
+body div#root .main-content .menu-drawer nav ul li:hover{
+	border-right: 5px solid var(--color);
 }
-body .app .landing-page-component .landing-avatar .landing-content{
-    width: 50%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+body div#root .main-content .menu-drawer nav ul li a p:nth-child(1){
+	color: var(--white);
+	font-size: 30px;
 }
-body .app .landing-page-component .landing-avatar .landing-content .heading h1{
-    position: absolute;    
+body div#root .main-content .menu-drawer nav ul li a p:nth-child(1):hover{
+	color: var(--color);
 }
-body .app .about-component{
-    width: 86%;
+body div#root .main-content .menu-drawer nav ul li a p{
+	color: var(--text-color);
 }
-header{
-    padding: 30px 0;
+
+/*Main Header*/
+header .menu-split{
+	display: flex;
 }
-header .company-title{
-    position: relative;
-    top: 27%;
+header .menu-split .split-left{
+	flex-grow: 1;
 }
-header .menu-toggle{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-content: flex-end;
-    align-items: flex-end;
+header .menu-split .split-right .menu-toggle{
+	width: 100%;
 }
-header .menu-toggle .am-menu-toggle{
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-    position: relative;
-    bottom: 10px;
+header .menu-split .split-right .menu-toggle .am-menu-toggle{
+	width: 55px;
+	height: 55px;
+	position: relative;
 }
-header .menu-toggle .am-menu-toggle .am-menu-title{
-    width: 100%;
-    height: 1px;
-    background: var(--white);
-    position: relative;
-    margin: 10px auto;
-    transition: width linear 0.5s;
+header .menu-split .split-right .menu-toggle .am-menu-toggle .am-menu-item{
+	width: 100%;
+	height: 1px;
+	background: #fff;
+	margin: 10px auto;
+	transition: all 0.5s ease-in;
 }
-header .menu-toggle a .am-menu-toggle .am-menu-title p{
-    color: var(--white)!important;
-}
-body .about-component .avatar-card{
-    padding: 20px;
-    display: flex;
-    align-items: center;
-}
-body .about-component .avatar-card .left{
-    width: 330px;
-    height: 440px;
-    background-color: var(--color);
-    display: flex;
-    padding: 20px;
-}
-body .about-component .avatar-card .right {
-    width: 290px;
-    height: 400px;
-    background-color: var(--purple);
-    position: absolute;
-    left: 175px;
-    top: 110px;
-    box-shadow: -1px 2px 24px var(--black);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(50%);
-}
-body .about-component .avatar-card .right img{
-    object-fit: cover;
-}
-body .about-component a{
-    width: 30%;
-    margin: 0 auto;
-    color:var(--text-color);
-    /* text-align: center; */
-    padding: 20px 0;
-}
-body .about-component p{
-    margin: 30px 0;
-    font-size: 18px;
+header .menu-split .split-right .menu-toggle .am-menu-toggle:hover
+header .menu-split .split-right .menu-toggle .am-menu-toggle .am-menu-item{
+	background: var(--color);
 }

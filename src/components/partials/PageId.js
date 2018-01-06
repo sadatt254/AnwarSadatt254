@@ -5,7 +5,8 @@ export default class pageIdentity extends React.Component{
         super(props);
 
         this.state ={
-            pageTitle: 'about me'
+            pageTitle: 'about',
+			subTitle: 'me'
         }
     }
 
@@ -15,23 +16,25 @@ export default class pageIdentity extends React.Component{
         if(window.location.pathname === '/portfolio'){
 
             title.innerHTML = 'Anwar magara - my work';
-            this.setState({pageTitle: 'my work'});
+            this.setState({
+				pageTitle: 'my',
+				subTitle: 'work'
+			});
 
         }else if(window.location.pathname === '/contacts'){
 
             title.innerHTML = 'Anwar magara - contacts';            
-            this.setState({pageTitle: 'contact me'})
+            this.setState({
+				pageTitle: 'contact',
+				subTitle: 'me'
+			})
             
-        }else{
-
-            title.innerHTML = 'Anwar magara - About me';            
-            this.setState({pageTitle: 'about me'})
         }
     }
     render(){
         return(
             <div className="heading page-id">
-                <h1 className="title am-bold main-color am-center">{this.state.pageTitle}</h1>
+                <h1 className="title am-bolder main-color am-center">{this.state.pageTitle} <span className="grey">{this.state.subTitle}</span></h1>
             </div>
         );
     }_

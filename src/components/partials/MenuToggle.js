@@ -12,14 +12,12 @@ export default class MenuToggle extends React.Component{
         e.preventDefault();
 
         const drawer = document.querySelector('.menu-drawer');
-        const cancel = document.querySelector('.cancel');
         drawer.classList.add('open');
-        cancel.classList.remove('open'); 
     }
 
     componentDidMount(){
         const toggleContainer = document.querySelector('.am-menu-toggle');
-        const menuItem = document.querySelectorAll('.am-menu-title');
+        const menuItem = document.querySelectorAll('.am-menu-item');
 
         toggleContainer.addEventListener('mouseover', () =>{
             // console.log({menuItem});
@@ -41,12 +39,12 @@ export default class MenuToggle extends React.Component{
             <div className="menu-toggle">
                 <a href="">
                     <div onClick = {this._hundleClick} className="am-menu-toggle">
-                        <div className="am-menu-title"></div>
-                        <div className="am-menu-title"></div>
-                        <div className="am-menu-title"></div>                        
-                    </div>
-                    <div className = "heading">
-                        <p className="am-center">{this.props.menuTitle}</p>
+                        <div className="am-menu-item"></div>
+                        <div className="am-menu-item"></div>
+                        <div className="am-menu-item"></div>  
+						<div className = "heading">
+							<p className="am-center">{this.props.menuTitle}</p>
+						</div>                      
                     </div>
                 </a>
             </div>

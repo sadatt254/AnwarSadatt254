@@ -2,6 +2,7 @@
     --color: #22c65b;
     --background-color: #181818;
     --container: 90%; 
+	--text-color: #4a4a4a;
 }
 
 .app{
@@ -9,16 +10,14 @@
     background-color: var(--background-color);
     padding: 0;
 }
+.grey{
+	color: var(--text-color)!important;
+}
 .white{
     color: #ffffff;
 }
 .main-content{
     margin-bottom: 20px;
-}
-.link_btn{
-    padding: 20px;
-    border: 1px solid #4a4a4a;
-    border-radius: 30px;
 }
 .app-content, .page-id{
     display: inline-block;
@@ -29,6 +28,9 @@
 .page-id h1{
     font-size: 15px;
     transform: rotate(-90deg);
+}
+header{
+	padding: 30px 5px;
 }
 .am-container{
     width: var(--container);

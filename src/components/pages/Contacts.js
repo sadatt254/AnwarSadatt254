@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import PageIdentity from '../partials/PageId';
+
 class Contacts extends Component {
     render() {
       return (

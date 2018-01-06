@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+
+import Button from '../partials/Button';
 import AvatarCard from '../partials/Avatars';
+import PageIdentity from '../partials/PageId';
 
 class About extends Component {
   render() {
@@ -7,6 +10,7 @@ class About extends Component {
       <div className="about-component app-content">
         <div className="columns">
           <div className="column">
+			<PageIdentity />
             <AvatarCard 
               avatarImg={require("../../images/14446071_1175636312501729_2826977849243634336_n.jpg")} 
               alternative="about avatar"/>
@@ -19,7 +23,7 @@ class About extends Component {
               </div>
             </div>
             <p className="am-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut tempora dolorum corporis architecto culpa perspiciatis sapiente a reprehenderit voluptatem. Ut voluptatem ipsa possimus natus libero consectetur ea debitis quasi eveniet.</p>
-            
+            <Button path="/portfolio" urlName="view my work"/>
           </div>
         </div>
       </div>

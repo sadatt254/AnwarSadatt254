@@ -3,7 +3,6 @@ import React from 'react';
 
 import Header from './Header';
 import Footer from './Footer';
-import PageIdentity from './PageId';
 import MenuDrawer from './MenuDrawer';
 
 export default class DefaultLayout extends React.Component{
@@ -12,8 +11,9 @@ export default class DefaultLayout extends React.Component{
             <div className="wrapper">
                 <MenuDrawer />
                 <Header />
-                    <PageIdentity />
+				<section>
                    {this.props.children} 
+				</section>
                 <Footer />
             </div>
         )
