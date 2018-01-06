@@ -36,6 +36,12 @@ header{
     width: var(--container);
     margin: 0 auto
 }
+.btn{
+	padding: 20px;
+	margin: 20px 10px;
+	text-align: center;
+	color: var(--white);
+}
 .main-color{
     color: var(--color);
 }
@@ -47,6 +53,9 @@ header{
 }
 .am-capitalize{
     text-transform: capitalize;
+}
+.am-norm{
+	text-transform: lowercase;
 }
 .am-center{
     text-align: center;

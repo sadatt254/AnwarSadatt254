@@ -7,7 +7,9 @@ const Header = () => {
 			<div className="menu-split">
 				<div className="split-left">
 					<div className="company-title">
-                        <p className="am-center am-capitalize am-bold"><span className="main-color">code univarse</span> 254</p>
+                        <p className="am-center am-capitalize am-bold">
+							<a href="/"><span className="main-color">code univarse</span> <span className="grey">254</span></a>
+						</p>
                     </div>
 				</div>
 				<div className="split-right">

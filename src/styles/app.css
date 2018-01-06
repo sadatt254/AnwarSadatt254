@@ -5,7 +5,54 @@
 	--white: #fff;
 	--text-color: #4a4a4a;
 	--color: #22c65b;
+	--landing-image: url('../images/pexels-photo.jpg');
 }
+
+/*Landing Page*/
+body #root .app .landing-page-component{
+	width: 100%;
+	height: 100vh;
+	background-image: var(--landing-image);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	overflow: hidden;
+}
+body #root .app .landing-page-component .overlay{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	opacity: 0.4;
+	background: var(--black);
+}
+body #root .app .landing-page-component .landing-content{
+	z-index: 999;
+	width: 50%;
+	margin: 0 auto;
+	position: relative;
+	top: 170px;
+}
+body #root .app .landing-page-component .landing-content h1{
+    left: 40%;
+    font-size: 100px;
+    z-index: 300;
+    transform: translate(0);
+}
+body #root .app .landing-page-component .landing-content p{
+    transform: translate(0);
+}
+body #root .app .landing-page-component .landing-content .btn-holder{
+	display: flex;
+	flex-direction: column;
+	transform: translate(0);
+}
+body #root .app .landing-page-component .landing-content .btn-holder .btn-left{
+	border: 2px solid var(--white);
+}
+body #root .app .landing-page-component .landing-content .btn-holder .btn-right{
+	background: var(--color);
+}
+
 
 /*Menu Drawer*/
 body div#root .main-content .menu-drawer{
