@@ -6,8 +6,15 @@ class Work extends Component {
     render() {
       return (
         <div className="work-component app-content">
-			<PageIdentity />
-          <p>this is the Work page</p>
+			<div className="columns">
+				<div className="column">
+					<PageIdentity />
+					<p>this is the Work page</p>
+				</div>
+				<div className="column">
+					magara
+				</div>
+			</div>
         </div>
       );
     }

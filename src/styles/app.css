@@ -125,3 +125,18 @@ header .menu-split .split-right .menu-toggle .am-menu-toggle:hover
 header .menu-split .split-right .menu-toggle .am-menu-toggle .am-menu-item{
 	background: var(--color);
 }
+
+/*Contact page*/
+section .contacts-component .info-right .contact-info{
+	width: 80%;
+}
+section .contacts-component .info-right .contact-info ul li{
+	padding: 10px 0;
+	border-bottom: 1px solid var(--white);
+}
+section .contacts-component .info-right .contact-info ul li:last-child{
+	border-bottom: 0 solid var(--white);
+}
+section .contacts-component .info-right .contact-info ul li a{
+	padding: 10px 0;
+}

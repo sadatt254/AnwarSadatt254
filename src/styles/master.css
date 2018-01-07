@@ -23,6 +23,7 @@
     display: inline-block;
 }
 .app-content{
+	width: 100%;
     margin: 30px auto;
 }
 .page-id h1{
