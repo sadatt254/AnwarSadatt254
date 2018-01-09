@@ -126,7 +126,17 @@ header .menu-split .split-right .menu-toggle .am-menu-toggle .am-menu-item{
 	background: var(--color);
 }
 
+/*About Page*/
+section .about-component{
+	display: flex;
+	align-self: stretch;
+}
+
 /*Contact page*/
+select .contacts-component .contacts-wrapper{
+	width: 50%;
+	margin: 0 auto;
+}
 section .contacts-component .info-right .contact-info{
 	width: 80%;
 }

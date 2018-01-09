@@ -13,6 +13,12 @@
 .grey{
 	color: var(--text-color)!important;
 }
+.am-left{
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	align-content: strech;
+}
 .white{
     color: #ffffff;
 }
@@ -24,6 +30,7 @@
 }
 .app-content{
 	width: 100%;
+	height: calc(400-125);
     margin: 30px auto;
 }
 .page-id h1{
@@ -51,6 +58,9 @@ header{
 }
 .am-bolder{
     font-weight: bolder;
+}
+.am-small{
+	font-size: 13px;
 }
 .am-capitalize{
     text-transform: capitalize;
